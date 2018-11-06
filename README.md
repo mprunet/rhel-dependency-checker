@@ -35,31 +35,31 @@ Precompiled package can be retrieved in [release section](https://github.com/mpr
 
 - Generate htlm report in online mode :
      ```
-     rhel-dependency-checker [OPTIONS] rpmlist.txt report.html
+     rhel-dependency-checker rpmlist.txt report.html
      ```
 - Generate htlm report in online mode behind an http proxy :
      ```
-     rhel-dependency-checker [OPTIONS] -p http://my.proxy.hostname.com:8080 rpmlist.txt report.html
+     rhel-dependency-checker -p http://my.proxy.hostname.com:8080 rpmlist.txt report.html
      ```
 - Generate htlm report in online mode, do not download new definition file if younger than 10 days :
      ```
-     rhel-dependency-checker [OPTIONS] -r 10 rpmlist.txt report.html
+     rhel-dependency-checker -r 10 rpmlist.txt report.html
      ```
 - Generate htlm report in offline mode :
      ```
-     rhel-dependency-checker [OPTIONS] -n rpmlist.txt report.html
+     rhel-dependency-checker -n rpmlist.txt report.html
      ```
 - Generate htlm french (titles only not description) :
      ```
-     rhel-dependency-checker [OPTIONS] -l fr rpmlist.txt report_fr.html
+     rhel-dependency-checker -l fr rpmlist.txt report_fr.html
      ```
 - Generate cve report :
      ```
-     rhel-dependency-checker [OPTIONS] -f cve rpmlist.txt cve.txt
+     rhel-dependency-checker -f cve rpmlist.txt cve.txt
      ```
 - Generate cve report on stdout:
      ```
-     rhel-dependency-checker [OPTIONS] -O -f cve rpmlist.txt
+     rhel-dependency-checker -O -f cve rpmlist.txt
      ```
 
 ## Compilation
