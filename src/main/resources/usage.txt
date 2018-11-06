@@ -74,6 +74,9 @@ EXIT CODES
     8      The RHEL is not recognized or not supported
     9      The OVAL file cannot be downloaded
 
+VERSION
+    ${project.version}
+
 AUTHOR
     Michel Prunet is the main author.
 

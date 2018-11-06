@@ -79,6 +79,10 @@ rhel-dependency-checker generate three reports's format :
 ### Windows
     java -jar rhel-dependency-checker.jar [OPTIONS] RPM_INPUT_FILE OUTPUT_REPORT_FILE
     java -jar rhel-dependency-checker.jar [OPTIONS] -O RPM_INPUT_FILE
+    or
+    rhel-dependency-checker.exe [OPTIONS] RPM_INPUT_FILE OUTPUT_REPORT_FILE
+    rhel-dependency-checker.exe [OPTIONS] -O RPM_INPUT_FILE
+    
 
 ### MacOSX
     java -jar rhel-dependency-checker.jar [OPTIONS] RPM_INPUT_FILE OUTPUT_REPORT_FILE

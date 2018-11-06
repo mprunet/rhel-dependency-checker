@@ -116,7 +116,11 @@ public class HtmlGenerator {
                 h2("Third party"),
                 div(
                         rawHtml(String.format(resourceBundle.getString("product.license.libs"),resourceBundle.getString("product.name"))
-                        )).withClass("content-2")
+                        )).withClass("content-2"),
+                footer(resourceBundle.getString("product.name") + " " + resourceBundle.getString("product.version"))
+                        .withClass("footer")
+
+
         ).render(writer);
     }
 

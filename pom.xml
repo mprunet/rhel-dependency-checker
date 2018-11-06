@@ -10,6 +10,12 @@
 
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <pluginManagement>
             <plugins>
                 <!--
@@ -61,7 +67,13 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>eu.prunet.security.rhelchecker.Main</mainClass>
+                                    <manifestEntries>
+                                        <Main-Class>eu.prunet.security.rhelchecker.Main</Main-Class>
+                                        <Built-By>Michel PRUNET</Built-By>
+                                        <Implementation-Title>${project.artifactId}</Implementation-Title>
+                                        <Implementation-Version>${project.version}</Implementation-Version>
+                                        <Implementation-Vendor-Id>${project.groupId}</Implementation-Vendor-Id>
+                                    </manifestEntries>
                                 </transformer>
                             </transformers>
                         </configuration>

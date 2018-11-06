@@ -34,7 +34,9 @@
             <metadata>
                 <title>Red Hat Enterprise Linux 5</title>
             </metadata>
-            <criterion comment="Red Hat Enterprise Linux 5 is installed" test_ref="oval:com.redhat.rhsa:tst:20070055001"/>
+            <criteria operator="AND">
+                <criterion comment="Red Hat Enterprise Linux 5 is installed" test_ref="oval:com.redhat.rhsa:tst:20070055001"/>
+            </criteria>
         </definition>
     </definitions>
     <tests>
