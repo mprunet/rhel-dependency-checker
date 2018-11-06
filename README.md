@@ -21,7 +21,7 @@ rpm --nosignature --nodigest -qa --qf '%{N} %{epochnum} %{V} %{R} %{arch} <%{SIG
    - In online mode, rhel-dependency-checker will download the file for you.  
 
 rhel-dependency-checker generate three reports's format : 
-   - [HTML report](sample/report.html)
+   - [HTML report](http://htmlpreview.github.io/?https://github.com/mprunet/rhel-dependency-checker/blob/master/sample/report.html)
    - [CVE bulk list](sample/cve.txt)
    - [Text report](sample/text.txt)
    
