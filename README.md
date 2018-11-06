@@ -26,7 +26,7 @@ rhel-dependency-checker generate three reports's format :
    - [Text report](sample/text.txt)
    
 ## Installation
-Precompiled package can be retreive in the [release section](https://github.com/mprunet/rhel-dependency-checker/releases).
+Precompiled package can be retrieved in [release section](https://github.com/mprunet/rhel-dependency-checker/releases).
 
 ## Requirements
     Java 8 or greater must be installed on your system
