@@ -1,0 +1,7 @@
+#!/bin/sh
+which java > /dev/null
+if [ $? -eq 0 ] ; then
+   exec java -jar $0 "$@"
+else
+   echo "Java 1.8 or greater must be installed"
+fi

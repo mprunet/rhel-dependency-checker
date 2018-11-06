@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oval_definitions xmlns="http://oval.mitre.org/XMLSchema/oval-definitions-5" xmlns:oval="http://oval.mitre.org/XMLSchema/oval-common-5" xmlns:red-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#linux" xmlns:unix-def="http://oval.mitre.org/XMLSchema/oval-definitions-5#unix" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://oval.mitre.org/XMLSchema/oval-common-5 oval-common-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5 oval-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#unix unix-definitions-schema.xsd http://oval.mitre.org/XMLSchema/oval-definitions-5#linux linux-definitions-schema.xsd">
+    <generator>
+        <oval:product_name>Red Hat OVAL Patch Definition Merger</oval:product_name>
+        <oval:product_version>3</oval:product_version>
+        <oval:schema_version>5.10</oval:schema_version>
+        <oval:timestamp>2018-10-19T04:10:43</oval:timestamp>
+        <oval:content_version>1539922243</oval:content_version>
+    </generator>
+    <definitions>
+        <definition class="patch" id="7" version="601">
+            <metadata>
+                <title>Red Hat Enterprise Linux 7</title>
+            </metadata>
+            <criteria operator="OR">
+                <criterion comment="Red Hat Enterprise Linux 7 Client is installed" test_ref="oval:com.redhat.rhsa:tst:20140675001"/>
+                <criterion comment="Red Hat Enterprise Linux 7 Server is installed" test_ref="oval:com.redhat.rhsa:tst:20140675002"/>
+                <criterion comment="Red Hat Enterprise Linux 7 Workstation is installed" test_ref="oval:com.redhat.rhsa:tst:20140675003"/>
+                <criterion comment="Red Hat Enterprise Linux 7 ComputeNode is installed" test_ref="oval:com.redhat.rhsa:tst:20140675004"/>
+            </criteria>
+        </definition>
+        <definition class="patch" id="6" version="601">
+            <metadata>
+                <title>Red Hat Enterprise Linux 6</title>
+            </metadata>
+            <criteria operator="OR">
+                <criterion comment="Red Hat Enterprise Linux 6 Client is installed" test_ref="oval:com.redhat.rhsa:tst:20100842001"/>
+                <criterion comment="Red Hat Enterprise Linux 6 Server is installed" test_ref="oval:com.redhat.rhsa:tst:20100842002"/>
+                <criterion comment="Red Hat Enterprise Linux 6 Workstation is installed" test_ref="oval:com.redhat.rhsa:tst:20100842003"/>
+                <criterion comment="Red Hat Enterprise Linux 6 ComputeNode is installed" test_ref="oval:com.redhat.rhsa:tst:20100842004"/>
+            </criteria>
+        </definition>
+        <definition class="patch" id="5" version="601">
+            <metadata>
+                <title>Red Hat Enterprise Linux 5</title>
+            </metadata>
+            <criterion comment="Red Hat Enterprise Linux 5 is installed" test_ref="oval:com.redhat.rhsa:tst:20070055001"/>
+        </definition>
+    </definitions>
+    <tests>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 7 Client is installed" id="oval:com.redhat.rhsa:tst:20140675001" version="601">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20140675001"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20140675002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 7 Server is installed" id="oval:com.redhat.rhsa:tst:20140675002" version="601">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20140675002"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20140675002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 7 Workstation is installed" id="oval:com.redhat.rhsa:tst:20140675003" version="601">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20140675003"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20140675002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 7 ComputeNode is installed" id="oval:com.redhat.rhsa:tst:20140675004" version="601">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20140675004"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20140675002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 6 Client is installed" id="oval:com.redhat.rhsa:tst:20100842001" version="603">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20100842001"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20100842002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 6 Server is installed" id="oval:com.redhat.rhsa:tst:20100842002" version="603">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20100842002"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20100842002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 6 Workstation is installed" id="oval:com.redhat.rhsa:tst:20100842003" version="603">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20100842003"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20100842002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 6 ComputeNode is installed" id="oval:com.redhat.rhsa:tst:20100842004" version="603">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20100842004"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20100842002"/>
+        </red-def:rpminfo_test>
+        <red-def:rpminfo_test check="at least one" comment="Red Hat Enterprise Linux 5 is installed" id="oval:com.redhat.rhsa:tst:20070055001" version="603">
+            <red-def:object object_ref="oval:com.redhat.rhsa:obj:20070055001"/>
+            <red-def:state state_ref="oval:com.redhat.rhsa:ste:20070055002"/>
+        </red-def:rpminfo_test>
+
+    </tests>
+    <objects>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20140675001" version="601">
+            <red-def:name>redhat-release-client</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20140675002" version="601">
+            <red-def:name>redhat-release-server</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20140675003" version="601">
+            <red-def:name>redhat-release-workstation</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20140675004" version="601">
+            <red-def:name>redhat-release-computenode</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20100842001" version="603">
+            <red-def:name>redhat-release-client</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20100842002" version="603">
+            <red-def:name>redhat-release-server</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20100842003" version="603">
+            <red-def:name>redhat-release-workstation</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20100842004" version="603">
+            <red-def:name>redhat-release-computenode</red-def:name>
+        </red-def:rpminfo_object>
+        <red-def:rpminfo_object id="oval:com.redhat.rhsa:obj:20070055001" version="603">
+            <red-def:name>redhat-release</red-def:name>
+        </red-def:rpminfo_object>
+    </objects>
+    <states>
+        <red-def:rpminfo_state id="oval:com.redhat.rhsa:ste:20140675002" version="601">
+            <red-def:version operation="pattern match">^7[^\d]</red-def:version>
+        </red-def:rpminfo_state>
+        <red-def:rpminfo_state id="oval:com.redhat.rhsa:ste:20100842002" version="603">
+            <red-def:version operation="pattern match">^6[^\d]</red-def:version>
+        </red-def:rpminfo_state>
+        <red-def:rpminfo_state id="oval:com.redhat.rhsa:ste:20070055002" version="603">
+            <red-def:version operation="pattern match">^5[^\d]</red-def:version>
+        </red-def:rpminfo_state>
+    </states>
+</oval_definitions>

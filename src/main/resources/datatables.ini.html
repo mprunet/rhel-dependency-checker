@@ -1,0 +1,31 @@
+<script>
+    $(document).ready( function () {
+        $('#summary').DataTable(
+            {
+                "paging": false,
+                "info": false,
+                "order": [[ 1, 'asc' ]],
+                "columns": [
+                    { "width": "33%" },
+                    { "width": "10%" },
+                    null
+                ]
+
+            });
+        $('.cve').DataTable(
+            {
+                "paging": false,
+                "searching": false,
+                "info": false,
+                "columns": [
+                    null,
+                    null,
+                    null,
+                    null,
+                    { "width": "300px" },
+                    null
+                ]
+
+            });
+    });
+</script>

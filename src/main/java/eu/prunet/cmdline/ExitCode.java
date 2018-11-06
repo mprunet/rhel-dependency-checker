@@ -1,0 +1,18 @@
+package eu.prunet.cmdline;
+
+public enum ExitCode {
+    OK,
+    ARGUMENT_ERROR,
+    BAD_OVAL_FILE_FORMAT,
+    REPORT_GENERATION_ISSUE,
+    REPORT_GENERATION_IO_ERROR,
+    IO_ERROR,
+    BAD_RPM_INPUT_FILE_FORMAT,
+    BUG,
+    RHEL_NOT_SUPPORTED,
+    DOWNLOAD_OVAL_MANUALLY
+
+
+
+
+}
