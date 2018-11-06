@@ -1,0 +1,188 @@
+oval:com.redhat.rhsa:def:20180260 : RHSA-2018:0260: systemd security update (Moderate)
+  - CVE-2018-1049
+oval:com.redhat.rhsa:def:20180395 : RHSA-2018:0395: kernel security and bug fix update (Important)
+  - CVE-2017-7518
+  - CVE-2017-12188
+oval:com.redhat.rhsa:def:20180666 : RHSA-2018:0666: krb5 security, bug fix, and enhancement update (Moderate)
+  - CVE-2017-7562
+  - CVE-2017-11368
+oval:com.redhat.rhsa:def:20180805 : RHSA-2018:0805: glibc security, bug fix, and enhancement update (Moderate)
+  - CVE-2014-9402
+  - CVE-2015-5180
+  - CVE-2017-12132
+  - CVE-2017-15670
+  - CVE-2017-15804
+  - CVE-2018-1000001
+oval:com.redhat.rhsa:def:20180849 : RHSA-2018:0849: gcc security, bug fix, and enhancement update (Low)
+  - CVE-2017-11671
+oval:com.redhat.rhsa:def:20180855 : RHSA-2018:0855: ntp security, bug fix, and enhancement update (Moderate)
+  - CVE-2017-6462
+  - CVE-2017-6463
+  - CVE-2017-6464
+oval:com.redhat.rhsa:def:20180980 : RHSA-2018:0980: openssh security, bug fix, and enhancement update (Low)
+  - CVE-2017-15906
+oval:com.redhat.rhsa:def:20180998 : RHSA-2018:0998: openssl security and bug fix update (Moderate)
+  - CVE-2017-3736
+  - CVE-2017-3737
+  - CVE-2017-3738
+oval:com.redhat.rhsa:def:20181062 : RHSA-2018:1062: kernel security, bug fix, and enhancement update (Important)
+  - CVE-2016-3672
+  - CVE-2016-7913
+  - CVE-2016-8633
+  - CVE-2017-7294
+  - CVE-2017-8824
+  - CVE-2017-9725
+  - CVE-2017-12154
+  - CVE-2017-12190
+  - CVE-2017-13166
+  - CVE-2017-13305
+  - CVE-2017-14140
+  - CVE-2017-15116
+  - CVE-2017-15121
+  - CVE-2017-15126
+  - CVE-2017-15127
+  - CVE-2017-15129
+  - CVE-2017-15265
+  - CVE-2017-15274
+  - CVE-2017-17448
+  - CVE-2017-17449
+  - CVE-2017-17558
+  - CVE-2017-18017
+  - CVE-2017-18203
+  - CVE-2017-18270
+  - CVE-2017-1000252
+  - CVE-2017-1000407
+  - CVE-2017-1000410
+  - CVE-2018-5750
+  - CVE-2018-6927
+  - CVE-2018-1000004
+oval:com.redhat.rhsa:def:20181200 : RHSA-2018:1200: patch security update (Important)
+  - CVE-2018-1000156
+oval:com.redhat.rhsa:def:20181223 : RHSA-2018:1223: librelp security update (Critical)
+  - CVE-2018-1000140
+oval:com.redhat.rhsa:def:20181318 : RHSA-2018:1318: kernel security, bug fix, and enhancement update (Important)
+  - CVE-2017-16939
+  - CVE-2018-1068
+  - CVE-2018-1087
+  - CVE-2018-1091
+  - CVE-2018-8897
+  - CVE-2018-1000199
+oval:com.redhat.rhsa:def:20181629 : RHSA-2018:1629: kernel security update (Important)
+  - CVE-2018-3639
+oval:com.redhat.rhsa:def:20181700 : RHSA-2018:1700: procps-ng security update (Important)
+  - CVE-2018-1124
+  - CVE-2018-1126
+oval:com.redhat.rhsa:def:20181852 : RHSA-2018:1852: kernel security update (Moderate)
+  - CVE-2018-3665
+oval:com.redhat.rhsa:def:20181957 : RHSA-2018:1957: git security update (Important)
+  - CVE-2018-11235
+oval:com.redhat.rhsa:def:20181965 : RHSA-2018:1965: kernel security and bug fix update (Important)
+  - CVE-2017-11600
+  - CVE-2018-3639
+oval:com.redhat.rhsa:def:20182123 : RHSA-2018:2123: python security update (Moderate)
+  - CVE-2016-2183
+oval:com.redhat.rhsa:def:20182181 : RHSA-2018:2181: gnupg2 security update (Important)
+  - CVE-2018-12020
+oval:com.redhat.rhsa:def:20182384 : RHSA-2018:2384: kernel security and bug fix update (Important)
+  - CVE-2017-13215
+  - CVE-2018-3620
+  - CVE-2018-3646
+  - CVE-2018-3693
+  - CVE-2018-5390
+  - CVE-2018-7566
+  - CVE-2018-10675
+oval:com.redhat.rhsa:def:20182570 : RHSA-2018:2570: bind security update  (Important)
+  - CVE-2018-5740
+oval:com.redhat.rhsa:def:20182748 : RHSA-2018:2748: kernel security and bug fix update (Important)
+  - CVE-2018-14634
+oval:com.redhat.rhsa:def:20182768 : RHSA-2018:2768: nss security update (Moderate)
+  - CVE-2018-12384
+oval:com.redhat.rhsa:def:20183032 : RHSA-2018:3032: binutils security, bug fix, and enhancement update (Low)
+  - CVE-2018-7208
+  - CVE-2018-7568
+  - CVE-2018-7569
+  - CVE-2018-7642
+  - CVE-2018-7643
+  - CVE-2018-8945
+  - CVE-2018-10372
+  - CVE-2018-10373
+  - CVE-2018-10534
+  - CVE-2018-10535
+  - CVE-2018-13033
+oval:com.redhat.rhsa:def:20183041 : RHSA-2018:3041: python security and bug fix update (Moderate)
+  - CVE-2018-1060
+  - CVE-2018-1061
+oval:com.redhat.rhsa:def:20183050 : RHSA-2018:3050: gnutls security, bug fix, and enhancement update (Moderate)
+  - CVE-2018-10844
+  - CVE-2018-10845
+  - CVE-2018-10846
+oval:com.redhat.rhsa:def:20183059 : RHSA-2018:3059: X.org X11 security, bug fix, and enhancement update (Low)
+  - CVE-2015-9262
+oval:com.redhat.rhsa:def:20183071 : RHSA-2018:3071: krb5 security, bug fix, and enhancement update (Low)
+  - CVE-2018-5729
+  - CVE-2018-5730
+oval:com.redhat.rhsa:def:20183083 : RHSA-2018:3083: kernel security, bug fix, and enhancement update (Important)
+  - CVE-2015-8830
+  - CVE-2016-4913
+  - CVE-2017-0861
+  - CVE-2017-10661
+  - CVE-2017-17805
+  - CVE-2017-18208
+  - CVE-2017-18232
+  - CVE-2017-18344
+  - CVE-2018-1092
+  - CVE-2018-1094
+  - CVE-2018-1118
+  - CVE-2018-1120
+  - CVE-2018-1130
+  - CVE-2018-5344
+  - CVE-2018-5391
+  - CVE-2018-5803
+  - CVE-2018-5848
+  - CVE-2018-7740
+  - CVE-2018-7757
+  - CVE-2018-8781
+  - CVE-2018-10322
+  - CVE-2018-10878
+  - CVE-2018-10879
+  - CVE-2018-10881
+  - CVE-2018-10883
+  - CVE-2018-10902
+  - CVE-2018-10940
+  - CVE-2018-13405
+  - CVE-2018-1000026
+oval:com.redhat.rhsa:def:20183092 : RHSA-2018:3092: glibc security, bug fix, and enhancement update (Moderate)
+  - CVE-2017-16997
+  - CVE-2018-6485
+  - CVE-2018-11236
+  - CVE-2018-11237
+oval:com.redhat.rhsa:def:20183140 : RHSA-2018:3140: GNOME security, bug fix, and enhancement update (Moderate)
+  - CVE-2017-18267
+  - CVE-2018-10733
+  - CVE-2018-10767
+  - CVE-2018-10768
+  - CVE-2018-12910
+  - CVE-2018-13988
+oval:com.redhat.rhsa:def:20183157 : RHSA-2018:3157: curl and nss-pem security and bug fix update (Moderate)
+  - CVE-2018-1000007
+  - CVE-2018-1000120
+  - CVE-2018-1000121
+  - CVE-2018-1000122
+  - CVE-2018-1000301
+oval:com.redhat.rhsa:def:20183221 : RHSA-2018:3221: openssl security, bug fix, and enhancement update (Moderate)
+  - CVE-2017-3735
+  - CVE-2018-0495
+  - CVE-2018-0732
+  - CVE-2018-0737
+  - CVE-2018-0739
+oval:com.redhat.rhsa:def:20183249 : RHSA-2018:3249: setup security and bug fix update (Low)
+  - CVE-2018-1113
+oval:com.redhat.rhsa:def:20183324 : RHSA-2018:3324: fuse security update (Moderate)
+  - CVE-2018-10906
+oval:com.redhat.rhsa:def:20183327 : RHSA-2018:3327: libmspack security update (Low)
+  - CVE-2018-14679
+  - CVE-2018-14680
+  - CVE-2018-14681
+  - CVE-2018-14682
+oval:com.redhat.rhsa:def:20183408 : RHSA-2018:3408: git security update (Important)
+  - CVE-2018-17456

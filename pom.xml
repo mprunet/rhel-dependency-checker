@@ -6,7 +6,7 @@
 
     <groupId>eu.prunet.security</groupId>
     <artifactId>rhel-dependency-checker</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
 
     <build>
