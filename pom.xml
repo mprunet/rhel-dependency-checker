@@ -6,7 +6,7 @@
 
     <groupId>eu.prunet.security</groupId>
     <artifactId>rhel-dependency-checker</artifactId>
-    <version>0.2</version>
+    <version>0.3-SNAPSHOT</version>
 
 
     <build>
@@ -95,6 +95,7 @@
                                     <filelist dir="${project.build.directory}" files="${project.build.finalName}.jar"/>
                                 </concat>
                                 <chmod file="${project.build.directory}/${project.artifactId}" perm="755"/>
+                                <copy file="${project.build.directory}/classes/README.md" preservelastmodified="true" overwrite="true" tofile="${project.basedir}/README.md"/>
                             </target>
                         </configuration>
                         <goals>
@@ -111,6 +112,33 @@
                     </dependency>
                 </dependencies>
                 -->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>readme-md</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${project.basedir}</directory>
+                                    <includes>
+                                        <include>README.md</include>
+                                    </includes>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                            <encoding>UTF-8</encoding>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
 
