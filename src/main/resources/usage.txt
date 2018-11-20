@@ -55,8 +55,12 @@ OPTIONS
 
     -P, --no-system-proxy
          Do not use the system proxy
+
     -l LANG, --lang=LANG
          Specify the language of the report. Default value: en, supported value: fr.
+
+    -V, --version
+         Print version information
 
     --force
          Overwrite the output file, if it's already exists

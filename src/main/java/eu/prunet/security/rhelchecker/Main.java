@@ -1,6 +1,8 @@
 package eu.prunet.security.rhelchecker;
 
 import eu.prunet.cmdline.*;
+import eu.prunet.schema.oval.def.DefinitionType;
+import eu.prunet.schema.oval.def.OvalDefinitions;
 import eu.prunet.schema.oval.linux.RpminfoObject;
 import eu.prunet.schema.oval.linux.RpminfoState;
 import eu.prunet.schema.oval.linux.RpminfoTest;
@@ -10,9 +12,6 @@ import eu.prunet.security.rhelchecker.rpm.CriteriaEvaluator;
 import eu.prunet.security.rhelchecker.rpm.Rpm;
 import eu.prunet.util.Pair;
 import eu.prunet.util.SimpleDownloader;
-import eu.prunet.cmdline.*;
-import eu.prunet.schema.oval.def.DefinitionType;
-import eu.prunet.schema.oval.def.OvalDefinitions;
 import org.w3c.dom.Node;
 
 import javax.xml.bind.JAXBContext;
@@ -144,12 +143,19 @@ public class Main {
         Arg keepExisting = parser.optional("keep-if-download-failed", 'k');
         Arg lang = parser.optionalWithDefaultValue("lang", 'l', "LANG", "en");
         Arg refresh = parser.optionalWithDefaultValue("refresh", 'r', "REFRESH_DELAY_IN_DAYS", "1");
-
+        Arg argVersion = parser.optional("version", 'V');
 
         String ovalFileName = "com.redhat.rhsa-RHEL%s.xml";
         Set<Arg> arguments = parser.parse(args);
+        if (arguments.contains(argVersion)) {
 
+            ResourceBundle rb = ResourceBundle.getBundle("i18n.translation", Locale.US);
+
+            System.out.println(rb.getString("product.name")+ " " + rb.getString("product.version"));
+            return;
+        }
         checkUsage(arguments);
+
         Proxy proxy = checkAndGetProxy(proxyParam, noSystemProxy, arguments);
         checkLang(lang);
 

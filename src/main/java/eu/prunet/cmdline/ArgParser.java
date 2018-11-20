@@ -56,10 +56,15 @@ public class ArgParser {
     public Set<Arg> parse(String[] args) throws BadArgumentException {
         Iterator<Arg> ite = argList.iterator();
         boolean optionAllowed = true;
+        boolean version = false;
         for (int i = 0; i< args.length; i++) {
             if ("-h".equals(args[i]) || "--help".equals(args[i])) {
                 return new HashSet<>();
             }
+            if ("-V".equals(args[i]) || "--version".equals(args[i])) {
+                version = true;
+            }
+
             if ("--".equals(args[i])) {
                 optionAllowed = false;
             } else if (optionAllowed && args[i].startsWith("--")) {
@@ -100,7 +105,7 @@ public class ArgParser {
         }
         while (ite.hasNext()) {
             Arg arg = ite.next();
-            if (arg.isMandatory()) {
+            if (arg.isMandatory() && !version) {
                 throw new BadArgumentException("Argument " + arg.getFullName() + " is mandatory");
             }
         }
