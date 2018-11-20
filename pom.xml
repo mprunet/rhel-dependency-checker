@@ -96,6 +96,7 @@
                                 </concat>
                                 <chmod file="${project.build.directory}/${project.artifactId}" perm="755"/>
                                 <copy file="${project.build.directory}/classes/README.md" preservelastmodified="true" overwrite="true" tofile="${project.basedir}/README.md"/>
+                                <copy file="${project.build.directory}/classes/launch4j.xml" preservelastmodified="true" overwrite="true" tofile="${project.basedir}/launch4j.xml"/>
                             </target>
                         </configuration>
                         <goals>

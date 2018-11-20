@@ -2,8 +2,8 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>console</headerType>
-  <jar>C:\Users\nqhj4545\SRC\rhelchecker\target\rhel-dependency-checker-0.1.jar</jar>
-  <outfile>C:\Users\nqhj4545\SRC\rhelchecker\target\rhel-dependency-checker.exe</outfile>
+  <jar>${project.build.directory}\\${project.build.finalName}.jar</jar>
+  <outfile>${project.build.directory}\\${project.artifactId}.exe</outfile>
   <errTitle>rhel-dependency-checker</errTitle>
   <cmdLine></cmdLine>
   <chdir></chdir>

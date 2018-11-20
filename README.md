@@ -71,7 +71,7 @@ Precompiled package can be retrieved in [release section](https://github.com/mpr
    maven package
    ```
    
-   The generated file will be located in target\rhel-dependency-checker-0.2.jar
+   The generated file will be located in target\rhel-dependency-checker-0.3-SNAPSHOT.jar
 
 ## Usage
 
